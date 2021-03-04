@@ -1,0 +1,10 @@
+D:\dev\c#\Forging\ForgingTest\bin\Debug\ForgingTest.exe.config
+D:\dev\c#\Forging\ForgingTest\bin\Debug\ForgingTest.exe
+D:\dev\c#\Forging\ForgingTest\bin\Debug\ForgingTest.pdb
+D:\dev\c#\Forging\ForgingTest\obj\Debug\ForgingTest.csprojAssemblyReference.cache
+D:\dev\c#\Forging\ForgingTest\obj\Debug\ForgingTest.Form1.resources
+D:\dev\c#\Forging\ForgingTest\obj\Debug\ForgingTest.Properties.Resources.resources
+D:\dev\c#\Forging\ForgingTest\obj\Debug\ForgingTest.csproj.GenerateResource.cache
+D:\dev\c#\Forging\ForgingTest\obj\Debug\ForgingTest.csproj.CoreCompileInputs.cache
+D:\dev\c#\Forging\ForgingTest\obj\Debug\ForgingTest.exe
+D:\dev\c#\Forging\ForgingTest\obj\Debug\ForgingTest.pdb
