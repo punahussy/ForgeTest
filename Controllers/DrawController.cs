@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,27 +12,29 @@ namespace ForgingTest.Controllers
     public class DrawController
     {
         BasicSword bs;
-
+        Point lastMousePos;
 
         public DrawController()
         {
-            bs = new BasicSword(new Point(300, 400));
+            bs = CurveRepository.bs;
         }
 
         public void Redraw(Graphics g)
         {
-            Point[] points = {
-               new Point(20, 50),
-               new Point(100, 10),
-               new Point(200, 100),
-               new Point(300, 50),
-               new Point(400, 80)};
+            Pen curvePaint = new Pen(Color.Black);
+            var curveFill = new SolidBrush(Color.Orange);
+            var points = bs.Points.Select(point => point.ToPoint()).ToArray();
+            g.FillClosedCurve(curveFill, points);
+            g.DrawCurve(curvePaint, points, 0.7f);
+            var mouseRadius = SettingsRepository.MouseClickRadius;
+            g.DrawEllipse(curvePaint, 
+                lastMousePos.X-mouseRadius/ 2, lastMousePos.Y-mouseRadius/2, mouseRadius, mouseRadius);
 
+        }
 
-            Pen pen = new Pen(Color.Black);
-            var points2 = bs.Points.ToArray();
-            g.DrawCurve(pen, points2, 0);
-
+        public void DrawMouse(int x, int y)
+        {
+            lastMousePos = new Point(x, y);
         }
     }
 }

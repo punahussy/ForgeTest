@@ -56,6 +56,9 @@
     </Compile>
     <Compile Include="Models\BasicSword.cs" />
     <Compile Include="Models\Curve.cs" />
+    <Compile Include="Models\CurveRepository.cs" />
+    <Compile Include="Models\RPoint.cs" />
+    <Compile Include="Models\SettingsRepository.cs" />
     <Compile Include="Models\TestCurve.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

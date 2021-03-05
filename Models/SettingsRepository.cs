@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ForgingTest.Models
 {
-    public abstract class Curve
+    public static class SettingsRepository
     {
-        public List<RPoint> Points;
+        public const int MouseClickRadius = 15;
     }
 }
